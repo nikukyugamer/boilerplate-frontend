@@ -48,3 +48,14 @@ $ yarn add --dev stylelint stylelint-config-standard-scss stylelint-config-reces
 ```bash
 $ yarn add --dev cypress eslint-plugin-cypress
 ```
+
+## Storybook
+- TODO: やる
+
+## reg-suit
+- TODO: やる
+
+## Next.js
+- TODO: やる
+- Next に限らないほうがいいけど、現実的に Next が第一候補になるから Next でいいか
+  - 他のフレームワークの場合でも改変すればいけるだろう

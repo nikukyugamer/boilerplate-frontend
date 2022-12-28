@@ -1,0 +1,32 @@
+{
+  "name": "boilerplate-frontend",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Osamu Takiya <takiya@toran.sakura.ne.jp>",
+  "bugs": {},
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
+    "sass": "^1.57.1",
+    "stylelint": "^14.16.0",
+    "stylelint-config-recess-order": "^3.1.0",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "tailwindcss": "^3.2.4",
+    "typescript": "4.9.4"
+  },
+  "homepage": "",
+  "keywords": [],
+  "license": "MIT",
+  "main": "app.js",
+  "repository": "https://nikukyugamer@github.com/nikukyugamer/boilerplate-frontend.git",
+  "scripts": {
+    "build": "tsc"
+  }
+}

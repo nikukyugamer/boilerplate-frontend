@@ -1,3 +1,8 @@
+tmp/*
+!tmp/.keep
+.envrc
+
+# 以下は GitHub が自動生成した内容である
 # Logs
 logs
 *.log

@@ -18,7 +18,7 @@ $ yarn add --dev eslint eslint-config-standard eslint-plugin-jest
 - ESLint に依存
 
 ```bash
-$ yarn add --dev typescript @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser
+$ yarn add --dev typescript ts-node @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 ## Jest

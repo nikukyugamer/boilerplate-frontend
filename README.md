@@ -32,7 +32,7 @@ $ yarn add --dev jest ts-jest @types/jest
 - ESLint に依存
 
 ```bash
-$ yarn add --prettier eslint-config-prettier
+$ yarn add --dev prettier eslint-config-prettier
 ```
 
 ## Stylelint

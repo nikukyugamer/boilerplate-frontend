@@ -6,11 +6,11 @@
 }
 
 .sub {
-  align-items: center;
-  background-color: #fff;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  align-items: center;
   justify-content: center;
   width: 500px;
+  height: 500px;
+  background-color: #fff;
 }

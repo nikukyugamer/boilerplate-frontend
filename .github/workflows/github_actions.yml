@@ -57,7 +57,7 @@ jobs:
           yarn build
       - name: ESLint を実行する
         run: |
-          yarn eslint src/app.ts
+          yarn eslint --no-config-lookup --debug src/app.ts
       - name: Prettier を実行する
         run: |
           yarn prettier src/app.ts

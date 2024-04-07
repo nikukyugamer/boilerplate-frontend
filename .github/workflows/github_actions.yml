@@ -63,4 +63,4 @@ jobs:
           yarn prettier src/app.ts
       - name: Stylelint を実行する
         run: |
-          yarn stylelint src/app.ts
+          yarn stylelint src/app.css

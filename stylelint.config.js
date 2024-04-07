@@ -14,7 +14,6 @@ module.exports = {
         ],
       },
     ],
-    'string-quotes': 'single',
   },
   ignoreFiles: ['**/node_modules/**'],
 }

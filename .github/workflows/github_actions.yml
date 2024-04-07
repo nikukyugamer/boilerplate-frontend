@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  eiyuden_crm_frontend:
+  boilerplate_frontend:
     name: boilerplate-frontend
     runs-on: ubuntu-22.04
     timeout-minutes: 15
@@ -35,7 +35,7 @@ jobs:
       - name: Node.js のセットアップを行う
         uses: actions/setup-node@v3
         with:
-          node-version-file: '.node-version'
+          node-version-file: .node-version
           cache: yarn
           cache-dependency-path: yarn.lock
       - name: Node のパッケージをインストールする
@@ -54,4 +54,4 @@ jobs:
           echo "npx --version: $(npx --version)
       - name: TypeScript をコンパイルする
         run: |
-          npx tsc
+          yarn build

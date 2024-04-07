@@ -55,3 +55,13 @@ jobs:
       - name: TypeScript をコンパイルする
         run: |
           yarn build
+      - name: ESLint を実行する
+        # TODO: .ts に対して実行するようにする
+        run: |
+          yarn eslint --no-config-lookup --debug
+      - name: Prettier を実行する
+        run: |
+          yarn prettier src/app.ts
+      - name: Stylelint を実行する
+        run: |
+          yarn stylelint src/app.css

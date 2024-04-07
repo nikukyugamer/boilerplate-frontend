@@ -55,3 +55,12 @@ jobs:
       - name: TypeScript をコンパイルする
         run: |
           yarn build
+      - name: ESLint を実行する
+        run: |
+          yarn eslint src/app.ts
+      - name: Prettier を実行する
+        run: |
+          yarn prettier src/app.ts
+      - name: Stylelint を実行する
+        run: |
+          yarn stylelint src/app.ts

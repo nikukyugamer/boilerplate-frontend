@@ -32,15 +32,19 @@ jobs:
           echo '${{ toJson(env) }}'
       - name: コードをチェックアウトする
         uses: actions/checkout@v4
+      - name: pnpm のセットアップを行う
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+        with:
+          version: 10.6.5
       - name: Node.js のセットアップを行う
         uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
-          cache: yarn
-          cache-dependency-path: yarn.lock
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
       - name: Node のパッケージをインストールする
         run: |
-          yarn install
+          pnpm install
       - name: （デバッグ用）各種バージョンを確認する
         run: |
           echo "gh version: $(gh version)"
@@ -54,14 +58,14 @@ jobs:
           echo "npx --version: $(npx --version)
       - name: TypeScript をコンパイルする
         run: |
-          yarn build
+          pnpm build
       - name: ESLint を実行する
         # TODO: .ts に対して実行するようにする
         run: |
-          yarn eslint --no-config-lookup --debug
+          pnpm eslint --no-config-lookup --debug
       - name: Prettier を実行する
         run: |
-          yarn prettier src/app.ts
+          pnpm prettier src/app.ts
       - name: Stylelint を実行する
         run: |
-          yarn stylelint src/app.css
+          pnpm stylelint src/app.css

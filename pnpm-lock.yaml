@@ -49,7 +49,7 @@ importers:
         version: 14.0.0(postcss@8.5.3)(stylelint@16.18.0(typescript@5.8.3))
       tailwindcss:
         specifier: ^4.0.0
-        version: 4.1.3
+        version: 4.1.4
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -92,6 +92,12 @@ packages:
 
   '@eslint-community/eslint-utils@4.5.1':
     resolution: {integrity: sha512-soEIOALTfTK6EjmKMMoLugwaP0rzkad90iIWd1hMO9ARkSAyjfMfkRRhLvD5qH7vvM0Cg72pieUfR6yh6XxC4w==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
+
+  '@eslint-community/eslint-utils@4.6.0':
+    resolution: {integrity: sha512-WhCn7Z7TauhBtmzhvKpoQs0Wwb/kBcy4CwpuI0/eEIr2Lx2auxmulAzLr91wVZJaz47iUZdkXOK7WlAfxGKCnA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
@@ -1472,8 +1478,8 @@ packages:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
 
-  tailwindcss@4.1.3:
-    resolution: {integrity: sha512-2Q+rw9vy1WFXu5cIxlvsabCwhU2qUwodGq03ODhLJ0jW4ek5BUtoCsnLB0qG+m8AHgEsSJcJGDSDe06FXlP74g==}
+  tailwindcss@4.1.4:
+    resolution: {integrity: sha512-1ZIUqtPITFbv/DxRmDr5/agPqJwF69d24m9qmM1939TJehgY539CtzeZRjbLt5G6fSy/7YqqYsfvoTEw9xUI2A==}
 
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
@@ -1601,6 +1607,11 @@ snapshots:
   '@dual-bundle/import-meta-resolve@4.1.0': {}
 
   '@eslint-community/eslint-utils@4.5.1(eslint@9.24.0(jiti@1.21.7))':
+    dependencies:
+      eslint: 9.24.0(jiti@1.21.7)
+      eslint-visitor-keys: 3.4.3
+
+  '@eslint-community/eslint-utils@4.6.0(eslint@9.24.0(jiti@1.21.7))':
     dependencies:
       eslint: 9.24.0(jiti@1.21.7)
       eslint-visitor-keys: 3.4.3
@@ -2215,7 +2226,7 @@ snapshots:
 
   eslint-plugin-es-x@7.8.0(eslint@9.24.0(jiti@1.21.7)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.5.1(eslint@9.24.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.6.0(eslint@9.24.0(jiti@1.21.7))
       '@eslint-community/regexpp': 4.12.1
       eslint: 9.24.0(jiti@1.21.7)
       eslint-compat-utils: 0.5.1(eslint@9.24.0(jiti@1.21.7))
@@ -2251,7 +2262,7 @@ snapshots:
 
   eslint-plugin-n@16.6.2(eslint@9.24.0(jiti@1.21.7)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.5.1(eslint@9.24.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.6.0(eslint@9.24.0(jiti@1.21.7))
       builtins: 5.1.0
       eslint: 9.24.0(jiti@1.21.7)
       eslint-plugin-es-x: 7.8.0(eslint@9.24.0(jiti@1.21.7))
@@ -3150,7 +3161,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  tailwindcss@4.1.3: {}
+  tailwindcss@4.1.4: {}
 
   to-regex-range@5.0.1:
     dependencies:

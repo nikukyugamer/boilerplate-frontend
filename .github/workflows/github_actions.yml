@@ -37,7 +37,7 @@ jobs:
         with:
           version: 10.18.2
       - name: Node.js のセットアップを行う
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version-file: .node-version
           cache: pnpm

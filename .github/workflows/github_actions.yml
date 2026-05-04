@@ -35,7 +35,7 @@ jobs:
       - name: pnpm のセットアップを行う
         uses: pnpm/action-setup@8912a9102ac27614460f54aedde9e1e7f9aec20d # v6.0.5
         with:
-          version: 10.33.2
+          version: 10.33.3
       - name: Node.js のセットアップを行う
         uses: actions/setup-node@v6
         with:

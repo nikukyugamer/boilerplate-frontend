@@ -19,7 +19,7 @@ importers:
         version: 8.65.0(eslint@10.8.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
       autoprefixer:
         specifier: ^10.4.13
-        version: 10.5.4(postcss@8.5.23)
+        version: 10.5.4(postcss@8.5.24)
       eslint:
         specifier: ^10.0.0
         version: 10.8.0(supports-color@7.2.0)
@@ -31,7 +31,7 @@ importers:
         version: 17.1.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.65.0(eslint@10.8.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@10.8.0(supports-color@7.2.0))(supports-color@7.2.0))(eslint-plugin-n@16.6.2(eslint@10.8.0(supports-color@7.2.0)))(eslint-plugin-promise@6.6.0(eslint@10.8.0(supports-color@7.2.0)))(eslint@10.8.0(supports-color@7.2.0))
       postcss:
         specifier: ^8.4.20
-        version: 8.5.23
+        version: 8.5.24
       prettier:
         specifier: ^3.0.0
         version: 3.9.6
@@ -46,7 +46,7 @@ importers:
         version: 7.7.0(stylelint-order@8.1.1(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3)))(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3))
       stylelint-config-standard-scss:
         specifier: ^17.0.0
-        version: 17.0.0(postcss@8.5.23)(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3))
+        version: 17.0.0(postcss@8.5.24)(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3))
       tailwindcss:
         specifier: ^4.0.0
         version: 4.3.3
@@ -1291,6 +1291,10 @@ packages:
     resolution: {integrity: sha512-g50586zr4bZmwFiTlflMu8E0bDTb5I5gertgwAKmsdUlTQIhZtunzUlD1WSzwcVWPoAVpsrA6vlfCD7oXvRwgg==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postcss@8.5.24:
+    resolution: {integrity: sha512-8RyVklq0owXUTa4xlpzu4l9AaVKIdQvAcOHZWaMh98HgySsUtxRVf/chRe3dsSLqb6i40BzGRzEUddRaI+9TSw==}
+    engines: {node: ^10 || ^12 || >=14}
+
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -1998,13 +2002,13 @@ snapshots:
 
   async-function@1.0.0: {}
 
-  autoprefixer@10.5.4(postcss@8.5.23):
+  autoprefixer@10.5.4(postcss@8.5.24):
     dependencies:
       browserslist: 4.28.6
       caniuse-lite: 1.0.30001806
       fraction.js: 5.3.4
       picocolors: 1.1.1
-      postcss: 8.5.23
+      postcss: 8.5.24
       postcss-value-parser: 4.2.0
 
   available-typed-arrays@1.0.7:
@@ -2952,9 +2956,9 @@ snapshots:
     dependencies:
       postcss: 8.5.23
 
-  postcss-scss@4.0.9(postcss@8.5.23):
+  postcss-scss@4.0.9(postcss@8.5.24):
     dependencies:
-      postcss: 8.5.23
+      postcss: 8.5.24
 
   postcss-selector-parser@7.1.1:
     dependencies:
@@ -2968,6 +2972,12 @@ snapshots:
   postcss-value-parser@4.2.0: {}
 
   postcss@8.5.23:
+    dependencies:
+      nanoid: 3.3.16
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
+  postcss@8.5.24:
     dependencies:
       nanoid: 3.3.16
       picocolors: 1.1.1
@@ -3182,26 +3192,26 @@ snapshots:
       stylelint: 16.26.1(supports-color@7.2.0)(typescript@5.9.3)
       stylelint-order: 8.1.1(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3))
 
-  stylelint-config-recommended-scss@17.0.0(postcss@8.5.23)(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3)):
+  stylelint-config-recommended-scss@17.0.0(postcss@8.5.24)(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3)):
     dependencies:
-      postcss-scss: 4.0.9(postcss@8.5.23)
+      postcss-scss: 4.0.9(postcss@8.5.24)
       stylelint: 16.26.1(supports-color@7.2.0)(typescript@5.9.3)
       stylelint-config-recommended: 18.0.0(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3))
       stylelint-scss: 7.0.0(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3))
     optionalDependencies:
-      postcss: 8.5.23
+      postcss: 8.5.24
 
   stylelint-config-recommended@18.0.0(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3)):
     dependencies:
       stylelint: 16.26.1(supports-color@7.2.0)(typescript@5.9.3)
 
-  stylelint-config-standard-scss@17.0.0(postcss@8.5.23)(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3)):
+  stylelint-config-standard-scss@17.0.0(postcss@8.5.24)(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3)):
     dependencies:
       stylelint: 16.26.1(supports-color@7.2.0)(typescript@5.9.3)
-      stylelint-config-recommended-scss: 17.0.0(postcss@8.5.23)(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3))
+      stylelint-config-recommended-scss: 17.0.0(postcss@8.5.24)(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3))
       stylelint-config-standard: 40.0.0(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3))
     optionalDependencies:
-      postcss: 8.5.23
+      postcss: 8.5.24
 
   stylelint-config-standard@40.0.0(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3)):
     dependencies:

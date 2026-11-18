@@ -43,7 +43,7 @@ importers:
         version: 18.0.0
       stylelint-config-recess-order:
         specifier: ^7.0.0
-        version: 7.10.0(stylelint-order@8.1.1(stylelint@18.0.0))(stylelint@18.0.0)
+        version: 7.10.1(stylelint-order@8.1.1(stylelint@18.0.0))(stylelint@18.0.0)
       stylelint-config-standard-scss:
         specifier: ^18.0.0
         version: 18.0.0(postcss@8.5.33)(stylelint@18.0.0)
@@ -1347,10 +1347,10 @@ packages:
     resolution: {integrity: sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA==}
     engines: {node: '>=4'}
 
-  stylelint-config-recess-order@7.10.0:
-    resolution: {integrity: sha512-sFQHOOwNYt8upCv4B7tY1EZ+iC1A7nTV7FbzsJOLdsoueFceMinE3Vf4cJPJj82raSZlfMa5ZOyheMRAh6vj6g==}
+  stylelint-config-recess-order@7.10.1:
+    resolution: {integrity: sha512-8/+9lu69ju2mVjFnpK/JBYlTaBG59A6TeE/+C/PMMSF16Ai9LojUBV6aOz3o62Z4y6Ia44u8n4gzJZxy2Cq/EQ==}
     peerDependencies:
-      stylelint: ^16.18.0 || ^17.0.0
+      stylelint: ^16.18.0 || ^17.0.0 || ^18.0.0
       stylelint-order: ^7.0.0 || ^8.0.0
 
   stylelint-config-recommended-scss@18.0.0:
@@ -2897,7 +2897,7 @@ snapshots:
 
   strip-bom@3.0.0: {}
 
-  stylelint-config-recess-order@7.10.0(stylelint-order@8.1.1(stylelint@18.0.0))(stylelint@18.0.0):
+  stylelint-config-recess-order@7.10.1(stylelint-order@8.1.1(stylelint@18.0.0))(stylelint@18.0.0):
     dependencies:
       stylelint: 18.0.0
       stylelint-order: 8.1.1(stylelint@18.0.0)
